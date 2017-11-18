@@ -1,0 +1,29 @@
+{
+  "name": "manon",
+  "version": "1.0.0",
+  "description": "### To install the project: `sudo apt-get update` `sudo apt-get install mongodb-org\\",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "mongoose": "^4.12.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManonDe/pizza-project.git"
+  },
+  "author": "manon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManonDe/pizza-project/issues"
+  },
+  "homepage": "https://github.com/ManonDe/pizza-project#readme"
+}
