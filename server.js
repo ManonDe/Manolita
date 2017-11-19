@@ -37,9 +37,6 @@ mongoose.connect('mongodb://localhost/manolita', err => {
   }
 });
 
-
-
-
 // General Conf
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -49,7 +46,6 @@ app.use(express.static(path.join(__dirname, 'node_modules', 'socket.io-client', 
 // Require Controller
 const Pizza = require ('./controller/pizzaController');
 const Ingredient = require ('./controller/ingredientsController');
-
 
 // Conf Routes
 app.use('/pizza', Pizza.router);

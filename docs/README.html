@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>PizzaProject</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+      <ul id="jump_to">
+        <li>
+          <a class="large" href="javascript:void(0);">Jump To &hellip;</a>
+          <a class="small" href="javascript:void(0);">+</a>
+          <div id="jump_wrapper">
+          <div id="jump_page_wrapper">
+            <div id="jump_page">
+              
+                
+                <a class="source" href="README.html">
+                  README.md
+                </a>
+              
+                
+                <a class="source" href="controllerSpec.html">
+                  controllerSpec.js
+                </a>
+              
+                
+                <a class="source" href="mainTest.html">
+                  mainTest.js
+                </a>
+              
+                
+                <a class="source" href="modelSpec.html">
+                  modelSpec.js
+                </a>
+              
+                
+                <a class="source" href="server.html">
+                  server.js
+                </a>
+              
+                
+                <a class="source" href="socketDemo.html">
+                  socketDemo.js
+                </a>
+              
+                
+                <a class="source" href="tests.html">
+                  tests.js
+                </a>
+              
+            </div>
+          </div>
+        </li>
+      </ul>
+    
+    <ul class="sections">
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <h1 id="pizzaproject">PizzaProject</h1>
+<p>Project de fin du module de web full stack. 
+Ce projet permet d’acceder à un site web qui offre la possibilité de créer ses pizza.</p>
+<h1 id="installation-du-projet-">Installation du projet :</h1>
+<p>npm init : permet de créer le fichier package.json</p>
+<p>sudo apt-get update
+sudo apt-get install mongodb-org
+mongo : vérifie l’installation de mongo</p>
+<p>npm i –save express
+node -v : check version
+nvm ls : voir les differentes version installer et celle utiliser par defaut
+nvm alias default 6 :change la version par defaut à 6</p>
+<h1 id="cr-les-outils-pour-mongo">Créé les outils pour mongo</h1>
+<p>Créer un fichier nommé mongod, puis copier le lien ci-dessous à l’intérieur :
+mongod –bind_ip=$IP –dbpath=data –nojournal –rest “$@”
+mongod –bind_ip=$IP –dbpath=data –nojournal –rest “$@” –repair</p>
+<p>Taper dans la console pour le mettre en executable : 
+sudo chmod +x mongod
+sudo chmod +x mongodRepair
+Ensuite créer un dossier data</p>
+<p>Pour lancer la connexion à mongod : ./mongod
+Ensuite dans un nouveau terminal lancer mongo : mongo
+Puis rentrer les commandes voulues pour gérer la BDD</p>
+<p>#Installation des modules pour les tests unitaires
+npm i -D mocha
+npm i -D chai
+lancer les test: npm test</p>
+<h1 id="installation-de-mocha-pour-les-tests-unitaires">Installation de mocha pour  les tests unitaires</h1>
+<p>npm i -D mocha
+lancer les test : npm test</p>
+<h1 id="installation-de-body-parser-afin-de-faire-le-crud">Installation de Body-Parser afin de faire le CRUD</h1>
+<p>npm install body-parser –save
+sudo apt update : met à jour avant de pouvoir installer</p>
+<h1 id="installation-de-mongoose-">Installation de Mongoose:</h1>
+<p>npm i -D mongoose</p>
+<h1 id="d-sinstaller-un-module-">Désinstaller un module:</h1>
+<p>npm uninstall “quelquechose” –save</p>
+<h1 id="installation-de-jsdoc-pour-la-g-n-ration-de-la-documentation">Installation de JSdoc pour la génération de la documentation</h1>
+<p>sudo npm install -g jsdoc
+Puis: docco src/*.coffee
+Pour générer la doc: jsdoc “nomdufichier”</p>
+
+            </div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

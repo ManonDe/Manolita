@@ -2,27 +2,27 @@
 
 const mongoose = require("mongoose");
 
-/** 
- * Modèle de la base de données Manolita
-**/
+ 
+ //Modèle de la base de données Manolita
+ 
 let ingredientsSchema = mongoose.Schema({
     nom: { type : String, unique : true }, 
     gram: Number, 
     prix: Number 
 }); 
 
-/**
- * Transform de receive price into cents
- * @return {number} price
- **/
+
+ //Transforme le prix en centimes
+ //@return {number} price
+ 
 ingredientsSchema.methods.IngtoCents = function(){
     this.prix = this.prix / 100;
     return this.prix;
 };
 
- /**
-  * Define "Pizza" as collection
-  **/
+ 
+ //Définit les ingrédients comme une collection
+  
 let Ingredients = mongoose.model('Ingredients', ingredientsSchema);
 
 module.exports = Ingredients;

@@ -4,12 +4,14 @@
   "description": "### To install the project: `sudo apt-get update` `sudo apt-get install mongodb-org\\",
   "main": "server.js",
   "scripts": {
-    "test": "mocha",
+    "test": "./node_modules/mocha/bin/mocha tests.js",
     "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "docco": "^0.7.0",
     "express": "^4.16.2"
   },
   "devDependencies": {
